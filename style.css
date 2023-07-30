@@ -1,0 +1,146 @@
+body {
+    font-family: Geneva, sans-serif;
+    font-weight: bold;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+    background-image: url("./images/background.png");
+    background-size: 85%;
+}
+
+.container {
+    height: 100vh;
+}
+
+.custom-block {
+    border-radius: 60px;
+    background-color: #feebef;
+}
+
+.row {
+    height: 100%;
+}
+
+.text-content {
+    padding: 1.5rem;
+}
+
+h3 {
+    position: relative;
+    font-family: "soledago";
+    font-size: 60px;
+    color: #62dc52;
+    margin-bottom: 1rem;
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+
+h1 {
+    position: relative;
+    font-family: "soledago";
+    font-size: 20px;
+    margin-top: -20px;
+    color: #FF4C4C;
+    animation: fadeInLeft 2s ease-in-out;
+}
+
+p {
+    font-family: "geologica";
+    font-size: 18px; 
+    font-weight: bold;
+    position: relative;
+    animation: fadeInLeft 3s ease-in-out;
+}
+
+img{
+    margin-left: 20px;
+    animation: fadeInTop 2s ease-in-out;
+    transition: transform 0.5s;
+}
+
+img:hover{
+    animation: rotateImage 1s 1;
+}
+
+
+.btn-secondary {
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    justify-content: space-evenly;
+    background-color: #62dc52;
+    font-family: "geologica";
+    font-weight: bold;
+    border: none;
+    color: #fff;
+    transition: background-color 0.3s ease;
+    animation: fadeInHeading 5s 1;
+}
+
+
+.btn-secondary:hover {
+    transition: 0.8s;
+    background-color: #FF4C4C;
+}
+
+
+
+@font-face {
+    font-family: 'soledago'; 
+    src: url(/fonts/Soledago.ttf); 
+}
+
+@font-face {
+    font-family: 'geologica'; 
+    src: url(/fonts/Geologica.ttf); 
+}
+
+@keyframes fadeInHeading {
+    0% {
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes fadeInLeft {
+    0% {
+        left: -100%;
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInTop {
+    0% {
+        top: -100%;
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes rotateImage {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
