@@ -77,6 +77,10 @@ img:hover{
     animation: fadeInHeading 5s 1;
 }
 
+.logo-btn {
+    display: block;
+}
+
 
 .btn-secondary:hover {
     transition: 0.8s;
