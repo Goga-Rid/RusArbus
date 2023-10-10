@@ -1,10 +1,9 @@
 body {
-    font-family: Geneva, sans-serif;
     font-weight: bold;
     line-height: 1.4;
     margin: 0;
     padding: 0;
-    background-image: url("./images/background.png");
+    background-color: #FE7276;
     background-size: 85%;
 }
 
@@ -14,7 +13,7 @@ body {
 
 .custom-block {
     border-radius: 60px;
-    background-color: #feebef;
+    background-color: #f5dcdc;
 }
 
 .row {
@@ -29,7 +28,7 @@ h3 {
     position: relative;
     font-family: "soledago";
     font-size: 60px;
-    color: #62dc52;
+    color: #095e12;
     margin-bottom: 1rem;
     animation: fadeInLeft 1s ease-in-out;
 }
@@ -52,14 +51,13 @@ p {
     animation: fadeInLeft 3s ease-in-out;
 }
 
-img{
+.waterimg{
     margin-left: 20px;
-    animation: fadeInTop 2s ease-in-out;
-    transition: transform 0.5s;
+    transition: transform 2s ease;
 }
 
-img:hover{
-    animation: rotateImage 1s 1;
+.waterimg:hover {
+    transform: rotate(360deg) ;
 }
 
 
@@ -68,23 +66,23 @@ img:hover{
     align-items: center;
     max-width: 300px;
     justify-content: space-evenly;
-    background-color: #62dc52;
+    background-color: #095e12;
     font-family: "geologica";
     font-weight: bold;
     border: none;
     color: #fff;
-    transition: background-color 0.3s ease;
-    animation: fadeInHeading 5s 1;
 }
 
-.logo-btn {
-    display: block;
-}
+
 
 
 .btn-secondary:hover {
-    transition: 0.8s;
+    transition: background-color 0.8s ease;
     background-color: #FF4C4C;
+}
+
+.btn-secondary:hover .logo-tg {
+    animation: rotateImage 1s ease-in-out;
 }
 
 
@@ -146,5 +144,14 @@ img:hover{
     }
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateImageBack {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
     }
 }
